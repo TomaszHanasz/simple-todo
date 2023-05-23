@@ -1,0 +1,39 @@
+.todo-container {
+  background-color: white;
+  padding: 40px;
+  width: 20%;
+  margin: 0 auto;
+  border: 2px brown solid;
+}
+
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.todo-input button {
+  width: 42px;
+}
+
+.list-title {
+  text-align: center;
+}
+
+.single-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
