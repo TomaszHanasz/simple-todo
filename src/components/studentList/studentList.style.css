@@ -1,0 +1,45 @@
+.student-list-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  height: fit-content;
+  margin: 30px auto;
+  color: honeydew;
+  background-color: #0e8314;
+  border: 2px black solid;
+}
+
+.single-student {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 23%;
+  gap: 10px;
+  padding: 5px;
+  margin: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  background-color: #2e5fa0;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.student-photo {
+  width: 99%;
+  height: 90%;
+  object-fit: cover;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.student {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.title {
+  flex-basis: 100%;
+  margin: 40px auto;
+  text-decoration: underline;
+}
