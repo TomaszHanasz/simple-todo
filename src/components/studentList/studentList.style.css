@@ -1,7 +1,6 @@
 .student-list-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
   padding: 10px;
   width: 80%;
@@ -15,7 +14,6 @@
 .single-student {
   display: flex;
   flex-direction: column;
-  flex-basis: 23%;
   gap: 10px;
   padding: 5px;
   margin: 10px;
@@ -39,7 +37,7 @@
 }
 
 .title {
-  flex-basis: 100%;
+  grid-column: 1 / 5;
   margin: 40px auto;
   text-decoration: underline;
 }
