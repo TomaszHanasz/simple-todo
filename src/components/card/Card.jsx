@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Button from "../button/Button";
+import ModalComponent from "../modalComponent/ModalComponent";
 import "./card.style.css";
 
 const Card = (props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onClickShowModal = () => {
+    setIsModalOpen(true);
+  };
+
   const { name, description, hobby, picture } = props.cardData;
   return (
     <div className="single-car">
@@ -14,9 +21,24 @@ const Card = (props) => {
           {description}
           {hobby}
           <br />
-          <Button />
+          <Button
+            text="Open"
+            className="btn"
+            type="button"
+            onClick={onClickShowModal}
+          />
         </div>
       </p>
+      {isModalOpen && (
+        <ModalComponent
+          onClick={() => setIsModalOpen(false)}
+          title={name}
+          image={picture}
+          description={description}
+          hobby={hobby}
+          name={name}
+        />
+      )}
     </div>
   );
 };
@@ -24,7 +46,7 @@ const Card = (props) => {
 Card.propTypes = {
   cardData: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
     picture: PropTypes.string.isRequired,
     hobby: PropTypes.string,
   }),

@@ -3,6 +3,7 @@
   height: 40px;
   color: #fff;
   padding: 5px 10px;
+  margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -10,10 +11,14 @@
   display: inline-block;
   outline: none;
   border-radius: 20px;
-  border: 2px solid #423b4c;
-  background: #423b4c;
+  border: 2px solid #f8f8f7;
+  background: #807e8a;
+  -webkit-box-shadow: 7px 9px 35px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 9px 35px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 9px 35px -11px rgba(0, 0, 0, 0.75);
+  z-index: 0;
 }
 .btn:hover {
   background: #fff;
-  color: #423b4c;
+  color: #807e8a;
 }

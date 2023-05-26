@@ -1,0 +1,46 @@
+.modal {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background: #883c5b;
+  color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.modal-img {
+  width: 50%;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(151, 137, 137, 0.438);
+  z-index: 2;
+  backdrop-filter: sepia(90%);
+}
