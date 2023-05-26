@@ -1,22 +1,19 @@
-import React from "react";
 import { students } from "./studentsData";
+import Card from "../card/Card";
 import "./studentList.style.css";
+import React from "react";
 
 const StudentList = () => {
   const showStudents = students.map((el, index) => {
-    return (
-      <div className="single-student" key={index}>
-        <img src={el.picture} className="student-photo" />
-        <p className="student">{el.name}</p>
-        <p>Enjoys {el.hobby}</p>
-      </div>
-    );
+    return <Card cardData={el} key={index} />;
   });
 
   return (
     <>
       <div className="student-list-box">
-        <h1 className="title">List of students:</h1>
+        <span className="title">
+          <h1>List of students:</h1>
+        </span>
         {showStudents}
       </div>
     </>
