@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import "./modalComponent.style.css";
 
 const ModalComponent = (props) => {
-  console.log(props);
   return (
     <div className="overlay">
       <div className="modal">
