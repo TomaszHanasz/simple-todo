@@ -10,7 +10,7 @@ const CarsList = () => {
 
   return (
     <>
-      <div className="cars-list-box">
+      <div className="list-box">
         <span className="title">
           <h1>List of cars:</h1>
         </span>

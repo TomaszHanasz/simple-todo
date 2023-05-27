@@ -34,3 +34,82 @@
   font-size: 1.3rem;
   padding-top: 20px;
 }
+
+@media only screen and (max-width: 595px) {
+  .car-info {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+
+  .car-photo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (max-width: 600px) {
+  .car-info {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+
+  .car-photo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 768px) {
+  .car-info {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+
+  .car-photo {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .car-info {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+
+  .car-photo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (max-width: 1200px) {
+  .car-info {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+}

@@ -10,7 +10,7 @@ const StudentList = () => {
 
   return (
     <>
-      <div className="student-list-box">
+      <div className="list-box">
         <span className="title">
           <h1>List of students:</h1>
         </span>
