@@ -49,6 +49,11 @@
   .car-photo {
     margin-bottom: 20px;
   }
+
+  .single-car {
+    margin: 30px 5px !important;
+    gap: 10px;
+  }
 }
 
 /* Small screen devices (600px and above) */
